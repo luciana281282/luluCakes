@@ -1,0 +1,218 @@
+*{
+    margin:o;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body{
+    background-image: url("/img/Especial.jpg");
+    background-size: cover; /*HACE QUE CUBRA TODO EL FONDO */
+    background-repeat: no-repeat; /*El fondo no se repite*/
+    background-position: center;
+    background-attachment: fixed; /*adapta la imagen a todo el fondo*/
+  }
+  
+  main{
+    width: 100%;
+    padding-inline: 20px;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    margin: auto;
+    margin-top: 100px;
+    /* height: calc(100vh - 85px); */
+  }
+  
+  .contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative; /*hace que los elementos se relacionen entre el*/
+  }
+  
+  .caja__trasera{
+    width: 100%;
+    padding: 40px 30px; /*10 de arriba a abajo y 20 de izq a derecha*/
+    display:flex; /*ayudara a desplazar*/
+    justify-content: center;
+    /*hacer el fondo transparente*/
+    /*backdrop-filter: pink(50px);*/
+    background-color: rgba(60, 42, 30, 1);
+  }
+  
+  /*ACCEDER A LOS DIVS DENTRO DE LA CAJA TRASERA (LOGIN Y REGISTER)*/
+  .caja__trasera div{
+    margin: 100px 40px;
+    color: rgba(247, 246, 246, 1);
+    transition: all 500ms; 
+  }
+  /*dejar un espacio en la caja*/
+  .caja__trasera div p,
+  .caja__trasera div button{
+    margin-top: 30px;
+  }
+  
+  /*modificar el titulo*/
+  .caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+  }
+  
+  .caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid rgba(247, 246, 246, 1);
+    background: transparent;
+    font-size: 14px;
+    font-family: 600;
+    cursor: pointer; /*cambia el mouse para mostrar que ocurrira algo*/
+    color: rgba(247, 246, 246, 1);
+    outline: none; /*saca la linea negra al clickear*/
+    transition: all 300ms;
+  }
+  
+  /*cuando pase el cursor encima va a cambiar a lo sig*/
+  .caja__trasera button:hover{
+    background: black;
+    color: pink;
+  }
+  
+  /*FORMULARIOS*/
+  .contenedor__login-register{
+    /*posisiconar de manera vertical los dos form*/
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    position: relative;
+    top: -235px;
+    left: 10px;
+    /*hacer la transicion lenta*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  }
+  
+  .contenedor__login-register form{
+    width: 100%;
+    padding: 15px 15px;
+    background: rgba(247, 246, 246, 1);
+    position: absolute;
+    border-radius: 20px;
+  }
+  
+  .contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(193, 162, 141);
+  }
+
+  .contenedor__login-register form label{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .contenedor__login-register form input{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background: rgb(193, 162, 141,0.2);
+    font-size: 16px;
+    outline: none;
+  }
+  .contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: rgb(193, 162, 141);
+    color: rgba(247, 246, 246, 1);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .formulario__login{
+    opacity: 1;
+    display: block;
+  }
+  
+  .formulario__register{
+    display: none;
+  }
+  
+  /* CREANDO LA VALIDACION DE DATOS*/
+  
+  
+  .form-control i{
+    visibility: hidden;
+  position: relative;
+  
+  }
+  
+  .form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+    margin-left: 20px;
+  }
+  
+  .form-control.error i.fa-exclamation-circle{
+  color: #e74c3c;
+  visibility: visible;
+    
+  }
+  
+  .form-control small {
+  color: #e74c3c;
+  position: absolute;
+    margin-left: 5px;
+  visibility: hidden;
+  }
+  
+  
+  .form-control.error small {
+  visibility: visible;
+    
+  }
+  
+  
+  .data__signIn{
+    display: none;
+  }
+  
+  
+  
+  
+  /* HACER TODO RESPONSIVE */
+  @media screen and (max-width: 850px){
+    main{
+        margin-top: 50px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+        padding: 5rem auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+     /*RESPONSIVE DE FORMULARIO*/
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+     }
+     .contenedor__login-register form{
+        position: relative;
+  
+     }
+  }
+  
+  
+  
+  
+  
+  

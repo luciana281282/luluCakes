@@ -1,0 +1,119 @@
+
+.container_tutorials {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+       "header"
+       "main"
+       "footer";
+ }
+ 
+ header {
+    grid-area: header;
+ }
+ 
+ main {
+    grid-area: main;
+    background: url("../img/Fondo-chico.png"), rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    margin-top: var(--header-height);
+ }
+ 
+ .h1-tutorial {
+    font-family: var(--font-title);
+    font-size: 2.5em;
+    margin: auto 0 0 0;
+    padding: 1.5rem var(--padding-small);
+    color: var(--font-color-light);
+    background-color: var(--color-dark);
+ }
+ 
+ .card-video {
+    color: var(--font-color-dark);
+    background-color: var(--color-background);
+    box-shadow: 2px 2px 3px 2px var(--color-shadow);
+    border-radius: 5px;
+    overflow: hidden;
+ 
+    margin: 1.5rem var(--margin-xs);
+ }
+ 
+ .tutorial {
+    margin: 0rem auto;
+    padding-inline: var(--padding-tutorials);
+ }
+ 
+ h3 {
+    padding: 0.75rem 1rem;
+    left: 0;
+    display: block;
+ 
+    background-color: var(--color-brown-accent);
+    text-transform: uppercase;
+    font-size: var(--font-size-h3);
+    letter-spacing: 2px;
+ }
+ 
+ .text h2 {
+    font-weight: bold;
+    line-height: 1.25em;
+    margin-top: 1.25rem;
+ }
+ 
+ .text p {
+    margin: 1rem 0;
+    line-height: 1.5rem;
+    text-align: justify;
+ }
+ 
+ iframe {
+    margin: auto;
+    width: 100%;
+    height: 170px;
+ }
+ 
+ footer {
+    grid-area: footer;
+ }
+ 
+ @media screen and (min-width: 500px) {
+    :root {
+       --margin-xs: 3rem;
+    }
+ 
+    iframe {
+       height: 30vh;
+    }
+ }
+ 
+ @media screen and (min-width: 760px) {
+    .tutorial {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 3em;
+       margin: 1.5rem 0;
+       align-items: center;
+       height: auto;
+    }
+ 
+    .tutorial.inverso {
+       grid-template-areas: "left right";
+    }
+ 
+    .tutorial.inverso iframe {
+       grid-area: left;
+    }
+ }
+ 
+ @media screen and (min-width: 1000px) {
+    :root {
+       --margin-xs: auto;
+    }
+ 
+    .card-video {
+       max-width: 864px;
+    }
+ }
+ 
+ 
+ 

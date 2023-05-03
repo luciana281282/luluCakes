@@ -1,0 +1,172 @@
+
+:root {
+    --font-title: "Dancing Script", cursive;
+    --font-text: "Montserrat", sans-serif;
+ 
+    --font-size-title: 3.5rem;
+    --font-size-p: 1rem;
+    --font-size-medium: 1.15rem;
+    --font-size-h2: 2.5rem;
+ 
+    --color-shadow: rgba(135, 109, 91, 0.502);
+    --color-accent: rgb(96, 1, 74);
+    --color-brown-accent: rgb(193, 162, 141);
+ 
+    --font-color-accent: rgb(96, 1, 74);
+    --font-color-dark: rgba(60, 42, 30, 1);
+    --font-color-light: rgb(247, 246, 246);
+ }
+ 
+ /*------------------MAIN------------------*/
+ 
+ .main {
+    background: url("../img/fondo-xs-claro.png");
+    background-size: cover;
+    background-color: rgba(193, 162, 141, 0.1);
+    box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
+    width: 100%;
+    font-size: var(--font-size-p);
+    margin: auto;
+    padding-bottom: 4rem;
+ }
+ 
+ /*------------------INTRO------------------*/
+ .intro {
+    width: 100%;
+    background: url("../img/1_tortas-fondo-oscuro.jpg");
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+ }
+ 
+ .intro img {
+    position: absolute;
+    opacity: 0.8;
+    max-width: 390px;
+    min-width: 60%;
+    height: 30rem;
+    padding: 8vw 0vw 0vw 2vw;
+    size: 800px;
+ }
+ 
+ .intro-text {
+    color: var(--color-accent);
+    margin-top: 85px;
+    margin-right: 35vw;
+    padding: 6vw;
+    text-align: left;
+    position: relative;
+    max-width: 60%;
+    min-width: 390px;
+ }
+ 
+ .intro-text .h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: var(--font-size-title);
+    line-height: 3.5rem;
+    padding-top: 1rem;
+    text-align: center;
+ }
+ 
+ .intro-text p {
+    font-family: var(--font-text);
+    color: var(--color-accent);
+    font-size: var(--font-size-medium);
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+    font-weight: 430;
+ }
+ 
+ /*------------------FORMULARIO------------------*/
+ .presupuesto-title {
+    color: var(--color-accent);
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+ }
+ 
+ .formulario {
+    display: grid;
+    justify-content: right;
+    text-align: center;
+    height: max-content;
+    background-image: url("../img/1_cupcake-fondo-oscuro.jpg");
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 30px;
+    margin: 0 16%;
+    padding: 2rem;
+ }
+ 
+ .formulario select {
+    background-color: rgb(253, 251, 249);
+    box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
+    padding: 10px 0;
+    border: 0;
+    margin: 0.5rem 0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    max-width: 400px;
+    min-width: 60%;
+    align-items: center;
+ }
+ .select,
+ option {
+    text-align: center;
+    color: var(--color-accent);
+    font-size: 1rem;
+ }
+ 
+ .formulario level {
+    font-size: var(-font-size-nav-p);
+    color: var(--font-color-light);
+    font-weight: 600;
+    text-shadow: 0px 0px 10px var(--color-accent);
+ }
+ 
+ .presupuesto-btn {
+    display: inline-block;
+    margin-left: 16%;
+    padding: 1rem 2rem;
+    background-color: var(--color-accent);
+    border-radius: 5px;
+    color: var(--font-color-light);
+    margin-top: 2rem;
+    transition: 300ms ease;
+ }
+ 
+ .presupuesto-btn:hover {
+    background-color: var(--color-brown-accent);
+    color: var(--font-color-dark);
+    border: 1px solid var(--color-dark);
+    box-shadow: 1px 2px 2px var(--color-dark);
+ }
+ 
+ .presupuesto-btn:active {
+    background-color: var(--color-dark);
+    color: var(--font-color-light);
+ }
+ .resultado {
+    color: var(--font-color-light);
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 16%;
+    padding: 2rem;
+    border-radius: 30px;
+    background-color: var(--color-accent);
+    height: 12rem;
+ }
+ 
+ @media screen and (min-width: 600px) {
+    .resultado {
+       height: 9rem;
+    }
+ }
+ 
