@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Iconos -->
+      <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+      <script
+         src="https://kit.fontawesome.com/3d04d0da9c.js"
+         crossorigin="anonymous"
+      ></script>
+
+      <!-- Estilos -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/main.css" />
+
+      <!-- Flaticon -->
+      <link
+         type="image/png"
+         sizes="16x16"
+         rel="icon"
+         href="./iconos/icons8-confitería-pastel-16.png"
+      />
+      <link
+         type="image/png"
+         sizes="32x32"
+         rel="icon"
+         href="./iconos/icons8-confitería-pastel-32.png"
+      />
+
+      <title>PyCakes</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <header id="idheader">
+            <a href="index.html" class="logo"><img src="./img/Logo-nav.png" alt="Logo" /></a>
+               
+<iconify-icon
+id="menu"
+icon="iconoir:menu-scale" style="color: #60014a;" width="35"
+flip="horizontal"></iconify-icon>
+
+<nav>
+   <i class="fa-solid fa-circle-xmark" id="closed"></i>
+
+   <ul>
+      <li><a href="index.html" class="pages">Inicio</a></li>
+      <li><a href="gallery.html" class="pages">Galería</a></li>
+      <li><a href="tutoriales.html" class="pages">Tutoriales</a></li>
+      <li><a href="quienesSomos.html" class="pages">Nosotros</a></li>
+   </ul>
+
+   <div class="nav-icons">
+   <a href="presupuesto.html">
+      <i class="fa-solid fa-cake-candles"></i>  
+      <p class="nav-icons-text">Presupuesto</p>
+   </a>
+
+   <a href="login.html">
+      <i class="fa-solid fa-user"></i>
+      <p class="nav-icons-text">Ingresar</p>
+   </a>
+   </div>
+</nav>
+            
+         </header>
+
+         <main>
+            <section class="intro">
+               <div class="img">
+                  <img src="./img/1_fondo-blanco.webp" alt=" " />
+               </div>
+               <div class="intro-text">
+                  <h1 class="h1">Calculá y Reservá</h1>
+                  <p>
+                     Obtené un presupuesto al instante del pastel que estás
+                     necesitando.
+                  </p>
+                  <p>
+                     Podés elegir las opciones que más te gusten de nuestro
+                     catálogo
+                  </p>
+                  <p>Solo debés llenar el siguiente formulario:</p>
+               </div>
+            </section>
+
+            <section class="main">
+               <h2 class="presupuesto-title">Presupuesto para Tortas</h2>
+
+               <form class="formulario" id="formulario" action="#">
+                  <level for="level">CANTIDAD DE NIVELES</level>
+                  <select name="level" id="level">
+                     <option
+                        value="0"
+                        selected="true"
+                        disabled="disabled"
+                     ></option>
+                     <option value="2">1 nivel</option>
+                     <option value="2.5">2 niveles</option>
+                     <option value="3">3 niveles</option>
+                     <option value="3.5">4 niveles</option>
+                     <option value="4">5 niveles</option>
+                  </select>
+
+                  <level for="size">TAMAÑO DEL NIVEL MAYOR</level>
+                  <select name="size" id="size">
+                     <option
+                        value="0"
+                        selected="true"
+                        disabled="disabled"
+                     ></option>
+                     <option value="50">18 cm</option>
+                     <option value="75">22 cm</option>
+                     <option value="100">24 cm</option>
+                     <option value="125">26 cm</option>
+                     <option value="200">30 cm</option>
+                  </select>
+
+                  <level for="sabor">SABORES</level>
+                  <select name="sabor" id="sabor">
+                     <option
+                        value="0"
+                        selected="true"
+                        disabled="disabled"
+                     ></option>
+                     <option value="300">
+                        Chocolate con ganache de chocolate
+                     </option>
+                     <option value="250">
+                        Chocolate con mermelada de frambueza
+                     </option>
+                     <option value="250">Limón con crud de limón</option>
+                     <option value="300">Red velvet con queso crema</option>
+                     <option value="200">
+                        Vainilla con memelada de frambueza
+                     </option>
+                  </select>
+
+                  <level for="cobertura">COBERTURA</level>
+                  <select name="cobertura" id="cobertura">
+                     <option
+                        value="0"
+                        selected="true"
+                        disabled="disabled"
+                     ></option>
+                     <option value="100">Buttercream</option>
+                     <option value="100">Crema chantilly</option>
+                     <option value="300">Fondant</option>
+                     <option value="250">Ganache de chocolate</option>
+                     <option value="50">Nude cake</option>
+                  </select>
+
+                  <level for="deco">DECORACIÓN</level>
+                  <select name="deco" id="deco">
+                     <option
+                        value="0"
+                        selected="true"
+                        disabled="disabled"
+                     ></option>
+                     <option value="200">Flores con buttercream</option>
+                     <option value="100">Efecto goteo con chocolate</option>
+                     <option value="200">Dulces y chocolate</option>
+                     <option value="150">Flores naturales</option>
+                     <option value="150">Frutas</option>
+                  </select>
+               </form>
+
+               <div class="resultado" id="resultado">
+                  <p>..Calculando..</p>
+               </div>
+               <a href="404.html" class="presupuesto-btn">¡Encargarlo ya!</a>
+            </section>
+         </main>
+         <footer id="idfooter">
+            <footer id="idfooter">
+               <div class="footer-top">
+                  <a class="footer-logo" href="index.html"><img src="./img/Logo-grande.png" alt=" PyCakes" /></a>
+               
+                
+                     
+                  <ul class="footer-ul">
+                     <li class="footer-li">Horario de atención</li>
+                     <li class="footer-li">Lunes a Sábados</li>
+                     <li class="footer-li horario">8:00 a 20:00</li>
+                     <li class="footer-li">Domingos y feriados</li>
+                     <li class="footer-li horario">Cerrado</li>
+                  </ul>
+               </div>
+                
+               <hr />
+                       
+   <div class="footer-bottom">
+      
+      <div class="social-media">
+         <div class="social-icon">
+            <a href="#">
+               <i class="fa-brands fa-facebook"></i>
+            </a>
+            <p>Facebook</p>
+         </div>
+      
+         <div class="social-icon">
+            <a href="#">
+               <i class="fa-brands fa-instagram"></i>   
+            </a>
+            <p>Instagram</p>
+         </div>
+      
+         <div class="social-icon">
+            <a href="#">
+               <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <p>Pinterest</p>
+         </div>
+      
+         <div class="social-icon">
+            <a href="#">
+               <i class="fa-brands fa-twitter"></i>
+            </a>
+            <p>Twitter</p>
+         </div>
+      
+         <div class="social-icon">
+            <a href="#">
+               <i class="fa-brands fa-youtube"></i> 
+            </a>
+            <p>YouTube</p>
+         </div>
+      
+         <div class="social-icon">
+            <a href="mailto:pycakes@gmail.com">
+               <i class="fa-solid fa-envelope"></i> 
+            </a>
+            <p>Mail</p>
+         </div>
+      
+      </div>
+      
+      <div class="copyright">
+         <div class="footer-small-text">
+           
+         </div>
+      </div>
+   </div>
+   
+   
+   
+            </footer>
+         </footer>
+      </div>
+
+      <script src="./js/presupuesto.js"></script>
+      <script src="./js/script2.js"></script>
+   </body>
+</html>

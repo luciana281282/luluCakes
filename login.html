@@ -1,0 +1,262 @@
+<!-- /* CARLOS */ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- API DE GOOGLE -->
+    <meta name="google-signin-client_id" content="405884368449-t28hflj8sb2i977posqj02a2ciqhd4ss.apps.googleusercontent.com">
+
+    <!-- Iconos -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script
+       src="https://kit.fontawesome.com/3d04d0da9c.js"
+       crossorigin="anonymous"
+    ></script>
+  
+
+    <!-- Google fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap""
+    rel="stylesheet">
+
+    <!-- CARPETAS CSS -->
+    <link rel="stylesheet" href="./css/login-style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Flaticon -->
+    <link
+    type="image/png"
+       sizes="16x16"
+       rel="icon"
+       href="./icons/icons8-confitería-pastel-16.png"
+       />
+       <link
+       type="image/png"
+       sizes="32x32"
+       rel="icon"
+       href="./icons/icons8-confitería-pastel-32.png"
+       />
+    
+    <script
+      src="https://kit.fontawesome.com/3d04d0da9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>PyCakes</title>
+  </head>
+
+  <body>
+    <header id="idheader">  
+      <header id="idheader">
+        <a href="index.html" class="logo"><img src="./img/Logo-nav.png" alt="Logo" /></a>
+           
+<iconify-icon
+id="menu"
+icon="iconoir:menu-scale" style="color: #60014a;" width="35"
+flip="horizontal"></iconify-icon>
+
+<nav>
+<i class="fa-solid fa-circle-xmark" id="closed"></i>
+
+<ul>
+  <li><a href="index.html" class="pages">Inicio</a></li>
+  <li><a href="gallery.html" class="pages">Galería</a></li>
+  <li><a href="tutoriales.html" class="pages">Tutoriales</a></li>
+  <li><a href="quienesSomos.html" class="pages">Nosotros</a></li>
+</ul>
+
+<div class="nav-icons">
+<a href="presupuesto.html">
+  <i class="fa-solid fa-cake-candles"></i>  
+  <p class="nav-icons-text">Presupuesto</p>
+</a>
+
+<a href="login.html">
+  <i class="fa-solid fa-user"></i>
+  <p class="nav-icons-text">Ingresar</p>
+</a>
+</div>
+</nav>
+        
+     </header>
+
+        
+        
+        
+    </header>
+
+    <main>
+      <div class="contenedor__todo">
+        <!-- FONDO FIJO TRASERO (SE DESPLAZARA ADELANTE) -->
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h3>¿Estas Registrado?</h3>
+            <p>Inicia sesión para entrar en la pagina</p>
+            <button id="btn__iniciar-sesion">Iniciar sesión</button>
+          </div>
+          <div class="caja__trasera-register">
+            <h3>¿Aun no tienes cuenta?</h3>
+            <p>Registrate para iniciar sesión</p>
+            <button id="btn__registrarse">Registrarse</button>
+          </div>
+        </div>
+        <!-- FORMULARIO LOGIN Y REGISTER -->
+        <div class="contenedor__login-register">
+          <!-- LOGIN -->
+          <form action="form__login" class="formulario__login" id="formulario__login">
+            <h2>Iniciar sesión</h2>
+
+            <div class="form-control">
+              <!-- <label for="email__login">Email</label> -->
+              <input type="text" id="email__login" placeholder="Correo Electrónico"/>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <!-- <label for="passwors__login">Contraseña</label> -->
+              <input type="password" id="password__login" placeholder="Contraseña"/>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <!-- LOGIN CON GOOGLE -->
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            
+            <div class="data__signIn">
+              <p>Name</p>
+              <p id="name" class="alert alert-success"></p>
+              <p>Profile picture</p>
+              <img id="image__login" src="" alt="" class="rounded-circle" width="100" height="100">
+              <p>Email</p>
+              <p id="email"></p>
+              <button type="button" class="btn btn-danger" onclick="signOut();">Sing Out</button>
+            </div>
+
+            <button type="submit">Entrar</button>
+          </form>
+          <!-- REGISTER -->
+          <form action="form__register" class="formulario__register" id="formulario__register" >
+            <h2>Registrarse</h2>
+            <div class="form-control">
+              <input type="text" id="name__register" placeholder="Nombre Completo">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <input type="text" id="email__register" placeholder="Correo Electronico">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="password__register" placeholder="Contraseña" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <input type="password" id="password2__register" placeholder="Repetir Contraseña">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <button type="submit">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer id="idfooter">
+        <div class="footer-top">
+           <a class="footer-logo" href="index.html"><img src="./img/Logo-grande.png" alt=" PyCakes" /></a>
+        
+         
+              
+           <ul class="footer-ul">
+              <li class="footer-li">Horario de atención</li>
+              <li class="footer-li">Lunes a Sábados</li>
+              <li class="footer-li horario">8:00 a 20:00</li>
+              <li class="footer-li">Domingos y feriados</li>
+              <li class="footer-li horario">Cerrado</li>
+           </ul>
+        </div>
+         
+        <hr />
+                
+<div class="footer-bottom">
+
+<div class="social-media">
+  <div class="social-icon">
+     <a href="#">
+        <i class="fa-brands fa-facebook"></i>
+     </a>
+     <p>Facebook</p>
+  </div>
+
+  <div class="social-icon">
+     <a href="#">
+        <i class="fa-brands fa-instagram"></i>   
+     </a>
+     <p>Instagram</p>
+  </div>
+
+  <div class="social-icon">
+     <a href="#">
+        <i class="fa-brands fa-pinterest"></i>
+     </a>
+     <p>Pinterest</p>
+  </div>
+
+  <div class="social-icon">
+     <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+     </a>
+     <p>Twitter</p>
+  </div>
+
+  <div class="social-icon">
+     <a href="#">
+        <i class="fa-brands fa-youtube"></i> 
+     </a>
+     <p>YouTube</p>
+  </div>
+
+  <div class="social-icon">
+     <a href="mailto:pycakes@gmail.com">
+        <i class="fa-solid fa-envelope"></i> 
+     </a>
+     <p>Mail</p>
+  </div>
+
+</div>
+
+<div class="copyright">
+  <div class="footer-small-text">
+    
+  </div>
+</div>
+</div>
+
+
+
+     </footer>
+    <script src="./js/login.js"></script>
+    <script src="./js/script2.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+  </body>
+</html>

@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+  
+      />
+
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700;900&family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Iconos -->
+      <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+      <script
+         src="https://kit.fontawesome.com/3d04d0da9c.js"
+         crossorigin="anonymous"
+      ></script>
+
+      <!-- Estilos -->
+      <link rel="stylesheet" href="css/gallery.css" />
+      <link rel="stylesheet" href="css/main.css" />
+
+      <!-- Flaticon -->
+      <link
+         type="image/png"
+         sizes="16x16"
+         rel="icon"
+         href="./iconos/icons8-confitería-pastel-16.png"
+      />
+      <link
+         type="image/png"
+         sizes="32x32"
+         rel="icon"
+         href="./iconos/icons8-confitería-pastel-32.png"
+      />
+
+      <title>LuluCakes</title>
+   </head>
+   <body>
+      <div class="container_gallery">
+         <header id="idheader">
+            <a href="index.html" class="logo"><img src="./img/Logo-grande.png" alt="Logo" /></a>
+               
+<iconify-icon
+id="menu"
+icon="iconoir:menu-scale" style="color: #60014a;" width="35"
+flip="horizontal"></iconify-icon>
+
+<nav>
+   <i class="fa-solid fa-circle-xmark" id="closed"></i>
+
+   <ul>
+      <li><a href="index.html" class="pages">Inicio</a></li>
+      <li><a href="gallery.html" class="pages">Galería</a></li>
+      <li><a href="tutoriales.html" class="pages">Tutoriales</a></li>
+      <li><a href="quienesSomos.html" class="pages">Nosotros</a></li>
+   </ul>
+
+   <div class="nav-icons">
+   <a href="presupuesto.html">
+      <i class="fa-solid fa-cake-candles"></i>  
+      <p class="nav-icons-text">Presupuesto</p>
+   </a>
+
+   <a href="login.html">
+      <i class="fa-solid fa-user"></i>
+      <p class="nav-icons-text">Ingresar</p>
+   </a>
+   </div>
+</nav>
+            
+         </header>
+
+         <main>
+            <h1 class="h1-gallery">Nuestros productos</h1>
+
+            <div class="gallery-container">
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs-text">
+                     <li class="breadcrumb-item">Galeria</li>
+                     <li id="breadcrumb-selection" class="breadcrumb-active">
+                        Boda
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="gallery">
+                  <div class="dropdown">
+                     <button
+                        onclick="dropdown()"
+                        class="dropdown-btn">
+                        <span id="dropdownBtn">Boda</span> 
+                        <i class="fa-solid fa-angle-down"></i>
+                     </button>
+                     <div class="ul-gallery" id="ulGallery">
+                        <p class="categories">Categoría</p>
+                        <a class="a-gallery" onclick="Boda()">Boda</a>
+                        <a class="a-gallery" onclick="Cookies()">Cookies</a>
+                        <a class="a-gallery" onclick="Cupcakes()">Cupcakes</a>
+                        <a class="a-gallery" onclick="Infantiles()"
+                           >Infantiles</a
+                        >
+                        <a class="a-gallery" onclick="Macarons()">Macarons</a>
+                        <a class="a-gallery" onclick="Postres()">Postres</a>
+                        <a class="a-gallery" onclick="Tartas()">Tartas</a>
+                        <a class="a-gallery" onclick="Tortas()">Tortas</a>
+                     </div>
+                  </div>
+
+                  <div class="gallery-items">
+                     <div class="gallery-card" id="card0">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName0">Black</h2>
+                           <p class="card-text" id="productDescription0">
+                              Recubierta en fondant negro se le agregan
+                              distintas texturas y objetos que la hagan destacar
+                              aún más.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="gallery-card" id="card1">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName1">Cascada</h2>
+                           <p class="card-text" id="productDescription1">
+                              Decorada con flores en colores pastel en forma de
+                              cascada. Sabores y cantidad de pisos
+                              personalizados.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="gallery-card" id="card2">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName2">
+                              Elegante
+                           </h2>
+                           <p class="card-text" id="productDescription2">
+                              Cubierta con fondant blanco, filigranas, perlas y
+                              flores. Sabores y cantidad de pisos
+                              personalizados.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="gallery-card" id="card3">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName3">
+                              Especial
+                           </h2>
+                           <p class="card-text" id="productDescription3">
+                              Masa de naranja y romero con relleno de curd de
+                              naranja. Las láminas de oro la hacen una torta
+                              especial.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="gallery-card" id="card4">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName4">
+                              Maroccan
+                           </h2>
+                           <p class="card-text" id="productDescription4">
+                              Decorado con fondant calado con patrones
+                              marroquies y rosas Blush. Paleta de colores
+                              personalizada.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="gallery-card" id="card5">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName5">Naked</h2>
+                           <p class="card-text" id="productDescription5">
+                              Posee un leve recubrimiento de buttercream y
+                              flores naturales. Sabores y cantidad de pisos
+                              personalizados.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="gallery-card" id="card6">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName6">Playera</h2>
+                           <p class="card-text" id="productDescription6">
+                              Para novios relajados que lo único que quieren es
+                              estar bajo el sol. Ideal para una boda en la
+                              playa.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="gallery-card" id="card7">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName7">
+                              Pure white
+                           </h2>
+                           <p class="card-text" id="productDescription7">
+                              Cubierta con fondant, filigranas y flores blancas.
+                              Sabores y cantidad de pisos personalizados.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+
+         <footer id="idfooter">
+            <div class="footer-top">
+               <a class="footer-logo" href="index.html"><img src="./img/Logo-grande.png" alt=" PyCakes" /></a>
+            
+             
+                  
+               <ul class="footer-ul">
+                  <li class="footer-li">Horario de atención</li>
+                  <li class="footer-li">Lunes a Sábados</li>
+                  <li class="footer-li horario">8:00 a 20:00</li>
+                  <li class="footer-li">Domingos y feriados</li>
+                  <li class="footer-li horario">Cerrado</li>
+               </ul>
+            </div>
+             
+            <hr />
+                    
+<div class="footer-bottom">
+   
+   <div class="social-media">
+      <div class="social-icon">
+         <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+         </a>
+         <p>Facebook</p>
+      </div>
+   
+      <div class="social-icon">
+         <a href="#">
+            <i class="fa-brands fa-instagram"></i>   
+         </a>
+         <p>Instagram</p>
+      </div>
+   
+      <div class="social-icon">
+         <a href="#">
+            <i class="fa-brands fa-pinterest"></i>
+         </a>
+         <p>Pinterest</p>
+      </div>
+   
+      <div class="social-icon">
+         <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+         </a>
+         <p>Twitter</p>
+      </div>
+   
+      <div class="social-icon">
+         <a href="#">
+            <i class="fa-brands fa-youtube"></i> 
+         </a>
+         <p>YouTube</p>
+      </div>
+   
+      <div class="social-icon">
+         <a href="mailto:pycakes@gmail.com">
+            <i class="fa-solid fa-envelope"></i> 
+         </a>
+         <p>Mail</p>
+      </div>
+   
+   </div>
+   
+   <div class="copyright">
+      <div class="footer-small-text">
+        
+      </div>
+   </div>
+</div>
+
+
+
+         </footer>
+      </div>
+
+      <script src="./js/gallery.js"></script>
+      <script src="./js/scripts2.js"></script>
+   </body>
+</html>
+
+<!--------------------------------------------------------------------- FINAL CINTIA  ------------------------------------------------------>
